@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Mendako Inc.</title>
+</head>
+<body>
+    <!-- sectionはHTMLのなかで一つのまとまりを明示するときに使う（なくてもいい） -->
+    <section id="user_register">
+        <!-- 上下に間隔をあける（y）-->
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-4 mx-auto">
+                    <div class="card bg-primary text-center">
+                        <div class="card-body text-light">
+                            <h3>ユーザー登録</h3>
+                            <p>ユーザー情報を入力してください。</p>
+                            <form method="POST">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control form-control-lg" placeholder="ユーザー名">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control form-control-lg" placeholder="メールアドレス">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" class="form-control form-control-lg" placeholder="パスワード">
+                                </div>
+                                <div class="mb-3">
+                                        <input type="password" class="form-control form-control-lg" placeholder="パスワード(確認)">                                    
+                                </div>
+                                <button type="submit" class="btn btn-outline-light w-100">登録</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
