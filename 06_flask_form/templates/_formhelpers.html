@@ -1,0 +1,11 @@
+{% macro render_field(field) %}
+<!-- 任意の数の引数を受け取る -->
+{{ field(**kwargs)|safe }}
+<!-- エラーメッセージがあるか確認 -->
+{% if field.errors %}
+    <br>
+    {% for error in field.errors %}
+        {{ error }}
+    {% endfor %}
+{% endif %}
+{% endmacro %}
