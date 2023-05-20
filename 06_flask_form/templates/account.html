@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+{% if current_user.is_administrator() %}
 <!-- Button trigger modal -->
 <section id="menu">
     <div class="container my-3 py-4 bg-light">
@@ -12,6 +13,7 @@
         </div>
     </div>
 </section>
+{% endif %}
 
 
 <!-- Modal -->

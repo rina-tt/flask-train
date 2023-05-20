@@ -46,12 +46,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{url_for('user_maintenance')}}">ユーザー</a>
                     </li>
+                    <!-- 現在のユーザーがログインしているか否か -->
+                    {% if current_user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ログアウト</a>
+                        <a class="nav-link" href="{{ url_for('logout') }}">ログアウト</a>
                     </li>
                     <span class="navbar-text ms-3">
-                        ログインユーザー
+                        {{ current_user.username }}
                     </span>
+                    {% endif %}
                 </ul>
             </div>
         </div>
